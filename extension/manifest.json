@@ -1,3 +1,5 @@
+//general description of the extension. Includes the icon, and refers to the popup.html and the other scripts. 
+
 {
   "name": "Data Detective",
   "version": "1.0",
