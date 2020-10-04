@@ -1,3 +1,6 @@
+//This is the modal code taken from Web Dev Simplied! You can find the original code here: https://github.com/WebDevSimplified/Vanilla-JavaScript-Modal
+//This is for future work :D Click on the Aerosol button to check it out though. 
+
 const openAerosolButtons = document.querySelectorAll('[data-aerosol-target]')
 const closeAerosolButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
