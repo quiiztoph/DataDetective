@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+        button {
+          id: Aerosol;
+          align-items: center;
+          height: 25px;
+          width: 250px;
+          outline: none;
+        }
+        body {
+          background-color: #E0F2F7;
+        }
+      </style>
+      <link href="style.css" rel="stylesheet">
+      <script defer src="popup.js"></script>
+    </head>
+  <body>
+    <p style="text-align:center;">Data Detective: your companion to access NASA datasets and more! Right click on buttons to access pathfinders and other websites.</p>
+    <a href="https://earthdata.nasa.gov/learn/pathfinders/health-and-air-quality-data-pathfinder">
+      <button data-aerosol-target="#aerosol" style="background-color:#F6CED8; text-align:center;"> Health and Air Quality</button>
+    </a>
+    <div class='aerosol' id='aerosol'>
+      <div class="aerosol-header">
+        <div class='title'>Datasets</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="aerosol-body">
+        HOPES FOR THE FUTURE: Here is the place where the access to datasets would go for each button. Also keywords for suggestion on search. Maybe add some filters and fixing that ugly cross D:!
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <a href="ftp://data.asc-csa.gc.ca/users/OpenData_DonneesOuvertes/pub/MOPITT/">
+      <button data-sat-target="#sat" style="background-color:#F6D8CE; text-align:center;"> Air Pollution (Open Data MOPITT)</button>
+    </a>
+    <a href="ftp://data.asc-csa.gc.ca/users/OpenData_DonneesOuvertes/pub/SCISAT">
+      <button data-sat-target="#sat" style="background-color:#F5F6CE; text-align:center;"> Atm. Gases (Open Data SCISAT)</button>
+    </a>
+    <a href="https://earthdata.nasa.gov/learn/pathfinders/wildfire-data-pathfinder">
+      <button data-fires-target="#fires" style="background-color:#D8F6CE; text-align:center;"> Wildfires</button>
+    </a>
+    <a href="http://earth.jaxa.jp/en.html">
+      <button data-sat-target="#sat" style="background-color:#CEE3F6; text-align:center;"> JAXA satellites for Earth</button>
+    </a>
+    <a href="https://earthdata.nasa.gov/learn/pathfinders/water-quality-data-pathfinder">
+      <button data-water-target="#water" style="background-color:#CECEF6; text-align:center;"> Water Quality</button>
+    </a>
+    <a href="https://earthdata.nasa.gov/learn/pathfinders/disasters">
+      <button data-water-target="#water" style="background-color:#F6CEF5; text-align:center;"> Natural Disasters</button>
+    </a>
+    <a href="https://earthdata.nasa.gov/learn/pathfinders/agricultural-and-water-resources-data-pathfinder">
+      <button data-water-target="#water" style="background-color:#E6E6E6; text-align:center;"> Agriculture and Water Resources</button>
+    </a>
+    <a href="https://earthdata.nasa.gov/learn/pathfinders/biodiversity">
+      <button data-water-target="#water" style="background-color:#E0F8E0; text-align:center;"> Biodiversity</button>
+    </a>
+    <a href="https://cwistyrocks.wixsite.com/datadetective/data-resources">
+      <img src='images/icon.png' id='hydrateImage' width = "250" height = "250" class = "center">
+    </a>
+  </body>
+</html>
